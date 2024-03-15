@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="566.0" prefWidth="710.0" style="-fx-background-color: 999999;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserLoginFormController">
+   <children>
+      <CubicCurve controlX1="-108.0" controlX2="-299.0" controlY1="245.54608154296875" controlY2="-388.54815673828125" endX="477.9296875" endY="-292.0" fill="#273c738c" layoutX="240.0" layoutY="292.0" startX="477.9296875" startY="276.5452880859375" stroke="#f5bf9300" strokeWidth="3.0" />
+      <TextField fx:id="txtUserName" alignment="CENTER" layoutX="365.0" layoutY="144.0" onAction="#txtGoToPasswordOnAction" prefHeight="45.0" prefWidth="322.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 25;">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPasswordTextField" alignment="CENTER" layoutX="410.0" layoutY="244.0" prefHeight="45.0" prefWidth="257.0" style="-fx-background-color: #f8c291; -fx-background-radius: 25;">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="363.0" layoutY="120.0" text="Enter Your e-mail" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="359.0" layoutY="220.0" text="Enter Your Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="45.0" fitWidth="37.0" layoutX="417.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-check-lock.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="120.0" layoutX="39.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/logo-no-background.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="100.0" layoutY="39.0" textFill="#f8c291">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="398.0" layoutY="45.0" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu Bold" size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="297.0" fitWidth="388.0" layoutX="14.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/myUser.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="532.0" layoutY="339.0" text="or" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="410.0" layoutY="371.0" text="New User ?" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="491.0" layoutY="368.0" onAction="#hypRegistrationOnAction" text="Sign Up Here" textFill="#471efc">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Hyperlink>
+      <JFXButton buttonType="RAISED" layoutX="496.0" layoutY="432.0" onAction="#btnLoginOnAction" prefHeight="18.0" prefWidth="82.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 25;" text="Login">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <PasswordField fx:id="txtPasswordField" alignment="CENTER" layoutX="367.0" layoutY="244.0" onAction="#txtBtnLoginOnAction" prefHeight="45.0" prefWidth="322.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 25;" />
+      <CheckBox fx:id="checkBox" layoutX="548.0" layoutY="309.0" mnemonicParsing="false" onAction="#changeVisibilityOnAction" text="Show Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </CheckBox>
+      <Hyperlink layoutX="364.0" layoutY="307.0" text="Forgot Password ?" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fx:id="imgLock" fitHeight="37.0" fitWidth="37.0" layoutX="380.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/myPassword.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="node" prefHeight="566.0" prefWidth="710.0" style="-fx-background-color: 999999;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.RegistrationFormController">
+   <children>
+      <CubicCurve controlX1="-881.0" controlX2="-241.0" controlY1="366.6637878417969" controlY2="114.00000762939453" endX="244.07568359375" endY="114.00000762939453" fill="#273c738c" layoutX="470.0" layoutY="-114.0" startX="244.07568359375" startY="688.0" stroke="#c3000000" strokeWidth="3.0" />
+      <Label layoutX="405.0" layoutY="78.0" text="Registration" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="120.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/logo-no-background.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="353.0" layoutY="135.0" text="Enter Your User Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" alignment="CENTER" layoutX="343.0" layoutY="162.0" onAction="#txtGoToEmailOnAction" prefHeight="45.0" prefWidth="303.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 25;">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPasswordTextField" alignment="CENTER" layoutX="346.0" layoutY="350.0" prefHeight="45.0" prefWidth="257.0" style="-fx-background-color: #f8c291; -fx-background-radius: 25;">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="45.0" fitWidth="37.0" layoutX="353.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-check-lock.gif" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="txtPasswordField" alignment="CENTER" layoutX="345.0" layoutY="350.0" onAction="#txtGoToBtnRegistrationOnAction" prefHeight="45.0" prefWidth="303.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 25;" />
+      <ImageView fx:id="imgLock" fitHeight="37.0" fitWidth="37.0" layoutX="353.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/myPassword.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="checkBox" layoutX="358.0" layoutY="410.0" mnemonicParsing="false" onAction="#changeVisibilityOnAction" text="Show Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </CheckBox>
+      <JFXButton buttonType="RAISED" layoutX="443.0" layoutY="480.0" onAction="#btnRegisterOnAction" prefHeight="37.0" prefWidth="108.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 25;" text="Register">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="353.0" layoutY="324.0" text="Enter Your Password" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" alignment="CENTER" layoutX="343.0" layoutY="256.0" onAction="#txtGoToPasswordOnAction" prefHeight="45.0" prefWidth="303.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 25;">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="353.0" layoutY="229.0" text="Enter Your Email" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="303.0" fitWidth="309.0" layoutX="21.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/myRegister.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="44.0" layoutX="646.0" layoutY="35.0" onMouseClicked="#imgBackONAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/myBack.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

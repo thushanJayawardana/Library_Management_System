@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="714.0" prefWidth="919.0" style="-fx-background-color: 999999;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.BooksFormController">
+   <children>
+      <Label layoutX="38.0" layoutY="13.0" text="Books" textFill="#273c73">
+         <font>
+            <Font name="Ubuntu Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="81.0" text="Book ID :" textFill="#273c73">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" layoutX="36.0" layoutY="107.0" prefHeight="36.0" prefWidth="189.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="276.0" layoutY="81.0" text="Title :" textFill="#273c73">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" layoutX="266.0" layoutY="107.0" prefHeight="36.0" prefWidth="189.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="704.0" layoutY="81.0" text="Athor :" textFill="#273c73">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" layoutX="704.0" layoutY="107.0" prefHeight="36.0" prefWidth="189.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="497.0" layoutY="156.0" text="Availability :" textFill="#273c73">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" layoutX="487.0" layoutY="182.0" prefHeight="36.0" prefWidth="189.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="497.0" layoutY="81.0" text="Genre :" textFill="#273c73">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" layoutX="487.0" layoutY="107.0" prefHeight="36.0" prefWidth="189.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="276.0" layoutY="156.0" text="Search Branch :" textFill="#273c73">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" layoutX="266.0" layoutY="182.0" prefHeight="36.0" prefWidth="189.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TableView layoutX="20.0" layoutY="308.0" prefHeight="401.0" prefWidth="881.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Book ID" />
+          <TableColumn prefWidth="206.0" text="Title" />
+            <TableColumn prefWidth="106.0" text="Genre" />
+            <TableColumn prefWidth="160.0" text="Author" />
+            <TableColumn prefWidth="129.0" text="Branch" />
+            <TableColumn prefWidth="92.0" text="Availability" />
+            <TableColumn prefWidth="112.0" text="Total Books" />
+        </columns>
+      </TableView>
+      <Label layoutX="45.0" layoutY="156.0" text="Book Count :" textFill="#273c73">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" layoutX="36.0" layoutY="182.0" prefHeight="36.0" prefWidth="189.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER" layoutX="163.0" layoutY="254.0" prefHeight="2.0" prefWidth="174.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 20;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="21.0" layoutY="260.0" text="Search Books :" textFill="#273c73">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="173.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-search-100.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="634.0" layoutY="254.0" prefHeight="24.0" prefWidth="70.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 25;" stylesheets="@../style/btn_hover.css" text="Save">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="719.0" layoutY="254.0" prefHeight="28.0" prefWidth="80.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 25;" stylesheets="@../style/btn_hover.css" text="Update">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="813.0" layoutY="254.0" prefHeight="28.0" prefWidth="80.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 25;" stylesheets="@../style/btn_hover.css" text="Delete">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="704.0" layoutY="156.0" text="Branch :" textFill="#273c73">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="704.0" layoutY="182.0" prefHeight="36.0" prefWidth="189.0" style="-fx-background-color: DEDEDE; -fx-background-radius: 20;" textFill="#273c73">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
